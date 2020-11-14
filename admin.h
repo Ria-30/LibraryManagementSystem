@@ -1,6 +1,5 @@
 #include<iostream>
 #include<string.h>
-
 using namespace std;
 
 class admin
@@ -10,7 +9,7 @@ class admin
     private:
         char username[100], password[100];
     public:
-        admin():name("name"),gender("gender"){}
+        admin():name(),gender(){}
         void new_admin()
         {
             cout<<"Name : ";
@@ -43,5 +42,9 @@ class admin
         char* get_password()
         {
             return password;
+        }
+        char* get_name()
+        {
+            return name;
         }
 };
